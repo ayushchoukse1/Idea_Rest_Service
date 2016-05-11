@@ -53,7 +53,7 @@ public class MongoDBConnection {
 			DB db1 = mongoClient.getDB("ideadb");
 			boolean auth = db1.authenticate("abc", "123".toCharArray());
 			//boolean collectionExists = db.collectionExists(collectionName);
-			DBCollection coll = db1.getCollection("lights");
+			DBCollection coll = db1.getCollection("newlights");
 			DBObject object = coll.findOne();
 			System.out.println(object.toString());
 		} catch (Exception e) {
